@@ -20,6 +20,7 @@ describe('Checking Names', () => {
 		const user = 'Jeff';
 		expect(user).toBe('Jeff');
 	});
+
 	test('User is Karen', () => {
 		const user = 'Karen';
 		expect(user).toBe('Karen');
