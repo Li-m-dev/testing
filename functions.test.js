@@ -1,4 +1,31 @@
 const functions = require('./functions');
+
+// the functions will run before or after each/all test
+// describe will target certain test (nameCheck fn on when you are running test('user is jeff))
+
+// const initDatabase = () => console.log('Database Initialized...');
+// const closeDatabase = () => console.log('Database closed...');
+
+// beforeEach(initDatabase);
+// afterEach(closeDatabase);
+
+// beforeAll(initDatabase);
+// afterAll(closeDatabase);
+
+const nameCheck = () => console.log('Checking name ...');
+
+describe('Checking Names', () => {
+	beforeEach(nameCheck);
+	test('User is Jeff', () => {
+		const user = 'Jeff';
+		expect(user).toBe('Jeff');
+	});
+	test('User is Karen', () => {
+		const user = 'Karen';
+		expect(user).toBe('Karen');
+	});
+});
+
 //toBe
 test('Add 2 + 2 equal 4', () => {
 	expect(functions.add(2, 2)).toBe(4);
