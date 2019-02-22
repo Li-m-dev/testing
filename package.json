@@ -1,15 +1,26 @@
 {
-  "name": "testing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "jest": "^24.1.0"
-  }
+	"name": "testing",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^24.1.0"
+	},
+	"dependencies": {
+		"axios": "^0.18.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LiSwafford/testing.git"
+	},
+	"bugs": {
+		"url": "https://github.com/LiSwafford/testing/issues"
+	},
+	"homepage": "https://github.com/LiSwafford/testing#readme"
 }
